@@ -1,0 +1,158 @@
+---
+// Import necessary components
+import MainLayout from "../layouts/MainLayout.astro";
+import MainSection from "../components/ui/blocks/MainSection.astro";
+import LeftSection from "../components/ui/blocks/LeftSection.astro";
+import RightSection from "../components/ui/blocks/RightSection.astro";
+import FeaturesStats from "../components/sections/features/FeaturesStats.astro";
+
+// Import necessary images
+import glass1 from "../images/services/exameocular1.jpg";
+import glass2 from "../images/services/exameocular2.jpg";
+import glass3 from "../images/services/consultaocular2.jpg";
+
+import acessor1 from "../images/services/montagem1.jpg";
+import acessor2 from "../images/services/montagem2.jpg";
+import acessor3 from "../images/services/lentecontacto1.jpeg";
+import acessor4 from "../images/services/manutencao.jpg";
+import acessor5 from "../images/services/manutencao2.jpg";
+
+interface Article {
+  isRightSection: boolean;
+  title: string;
+  subTitle: string;
+  btnExists?: boolean;
+  btnTitle?: string;
+  btnURL?: string;
+  single?: boolean;
+  img?: any;
+  imgAlt?: string;
+  imgOne?: any;
+  imgOneAlt?: string;
+  imgTwo?: any;
+  imgTwoAlt?: string;
+}
+
+const articles: Article[] = [
+  {
+    isRightSection: true,
+    title: "Exames de visão abrangentes",
+    subTitle: `Nossos exames de visão abrangentes são conduzidos por oftalmologistas e optometristas experientes, utilizando tecnologia de ponta para avaliar sua acuidade visual e saúde ocular. Esses exames incluem testes de refração para determinar a prescrição de óculos ou lentes de contato, bem como exames de saúde ocular para detectar quaisquer problemas, como glaucoma, catarata ou degeneração macular. Estamos comprometidos em fornecer uma avaliação completa e precisa de sua visão para garantir o melhor cuidado possível`,
+    single: false,
+    imgOne: glass1,
+    imgOneAlt: "glass1",
+    imgTwo: glass2,
+    imgTwoAlt: "Person working in the office",
+  },
+  {
+    isRightSection: false,
+    title: "Consultas especializadas",
+    subTitle: `Nossas consultas especializadas são projetadas para abordar preocupações específicas relacionadas à visão e oferecer soluções personalizadas. Se você estiver enfrentando problemas como visão dupla, olhos secos, alergias oculares ou outras condições oftalmológicas, nossos especialistas estão aqui para ajudar. Eles irão fornecer diagnósticos precisos e recomendações de tratamento para garantir sua saúde ocular e conforto visual.`,
+    img: glass3,
+    imgAlt: "glass3",
+    btnExists: false,
+    btnTitle: "Learn More",
+    btnURL: "#",
+  },
+  {
+    isRightSection: true,
+    title: "Montagem e ajuste de óculos",
+    subTitle: `Nossa equipe dedicada está disponível para ajudá-lo na escolha e montagem dos óculos perfeitos para você. Com uma ampla seleção de armações de alta qualidade e lentes oftálmicas de última geração, estamos aqui para garantir que você obtenha o ajuste perfeito e o estilo que melhor se adapte às suas necessidades e preferências. Além disso, oferecemos serviços de ajuste personalizado para garantir o conforto e a precisão de seus óculos.`,
+    single: false,
+    imgOne: acessor1,
+    imgOneAlt: "Construction workers orchestrating a project",
+    imgTwo: acessor2,
+    imgTwoAlt: "Aerial view of managed construction",
+  },
+  {
+    isRightSection: false,
+    title: "Serviços de lentes de contato",
+    subTitle: `Se você preferir lentes de contato para correção visual, oferecemos uma variedade de opções para atender às suas necessidades. Nossos serviços incluem adaptação de lentes de contato, treinamento sobre o uso e cuidados adequados, bem como fornecimento contínuo de lentes de contato de reposição. Nossa equipe irá ajudá-lo a encontrar as lentes de contato ideais para sua visão e estilo de vida, garantindo conforto e desempenho excepcionais.`,
+    img: acessor3,
+    imgAlt:
+      "Man in orange and black vest wearing white helmet holding yellow and black power tool",
+  },
+  {
+    isRightSection: true,
+    title: "Reparos e manutenção de óculos",
+    subTitle: `Se seus óculos precisarem de reparos ou ajustes, estamos aqui para ajudar. Nossa equipe técnica qualificada pode lidar com uma variedade de reparos, incluindo substituição de parafusos, soldagem de armações danificadas e ajuste de peças soltas. Além disso, oferecemos serviços de limpeza e manutenção para garantir que seus óculos permaneçam em ótimas condições. Estamos comprometidos em fornecer soluções rápidas e eficientes para manter sua visão clara e seus óculos funcionando perfeitamente`,
+    single: false,
+    imgOne: acessor4,
+    imgOneAlt: "In progress building structure",
+    imgTwo: acessor5,
+    imgTwoAlt: "Brown and gray building under construction",
+    btnExists: false,
+    btnTitle: "Read more",
+    btnURL: "#",
+  },
+];
+---
+
+<MainLayout title="Serviços">
+  <!--MainSection is the introductory section of the page, it also contains a CTA button-->
+  <MainSection
+    title="Explore os nossos serviços"
+    subTitle="Na Óptica BV-Baía, nossa prioridade é garantir sua satisfação e cuidar da saúde de seus olhos. Entre em contato conosco para marcar uma consulta ou saber mais sobre nossos serviços. Estamos aqui para ajudá-lo a ver o mundo com clareza e conforto"
+    btnExists={true}
+    btnTitle="Fazer uma marcação"
+    btnURL="/contact"
+  />
+  <!-- RightSection and LeftSection contain details about various services along with pertinent imagery.
+  They alternate for variety in design.
+  The 'btnExists' property is used to toggle the display of a button in these sections.
+  When btnExists={true}, a button is displayed.
+  This can be used to link to more detailed information or related resources.
+  RightSection can also conditionally render one or two images based on the 'single' property.
+  If 'single' is true, it displays one image, otherwise it displays two.
+  -->
+  {
+    articles.map((article) => {
+      return article.isRightSection ? (
+        <RightSection
+          title={article.title}
+          subTitle={article.subTitle}
+          single={article.single}
+          imgOne={article.imgOne}
+          imgOneAlt={article.imgOneAlt}
+          imgTwo={article.imgTwo}
+          imgTwoAlt={article.imgTwoAlt}
+          btnExists={article.btnExists}
+          btnTitle={article.btnTitle}
+          btnURL={article.btnURL}
+        />
+      ) : (
+        <LeftSection
+          title={article.title}
+          subTitle={article.subTitle}
+          img={article.img}
+          imgAlt={article.imgAlt}
+          btnExists={article.btnExists}
+          btnTitle={article.btnTitle}
+          btnURL={article.btnURL}
+        />
+      );
+    })
+  }
+  <!--FeaturesStats section showcases essential stats valuable to users-->
+  <FeaturesStats
+    title="Alguns Números"
+    subTitle="Abaixo temos alguns números que demonstram o nosso trabalho ao longo da nossa jornada"
+    mainStatTitle="+1,000"
+    mainStatSubTitle="clientes fatisfeitos com os nossos serviços"
+    stats={[
+      {
+        stat: "95.8%",
+        description:
+          "de safisfação nos serviços prestados para os nossos clientes",
+      },
+      {
+        stat: "+5,000",
+        description: "seguidores nas nossas redes sociais",
+      },
+      {
+        stat: "+1,000",
+        description: "armações encomendadas com sucesso",
+      },
+    ]}
+  />
+</MainLayout>

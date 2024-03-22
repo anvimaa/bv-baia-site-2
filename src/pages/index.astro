@@ -1,0 +1,108 @@
+---
+// Import the necessary components
+import MainLayout from "../layouts/MainLayout.astro";
+import HeroSection from "../components/sections/landing/HeroSection.astro";
+import HeroSectionAlt from "../components/sections/landing/HeroSectionAlt.astro";
+import ClientsSection from "../components/sections/landing/ClientsSection.astro";
+import FeaturesGeneral from "../components/sections/features/FeaturesGeneral.astro";
+import FeaturesNavs from "../components/sections/features/FeaturesNavs.astro";
+import TestimonialsSection from "../components/sections/testimonials/TestimonialsSection.astro";
+import FAQ from "../components/sections/FAQ.astro";
+import AnnouncementBanner from "../components/ui/banners/AnnouncementBanner.astro";
+import heroImage from "../images/hero1.jpg";
+
+const avatarSrcs: Array<string> = [
+  "/image/user1.jpg",
+  "/image/user2.jpg",
+  "/image/user3.jpg",
+  "/image/user4.jpg",
+];
+---
+
+<MainLayout>
+  <AnnouncementBanner
+    btnId="dismiss-button"
+    btnTitle="Saiba mais sobre os meus projectos"
+    url="https://github.com/anvimaa"
+  />
+
+  <HeroSection
+    title=`Cuide os seus olhos com a <span class="text-blue-600">ÓPTICA</span> <span
+        class="text-green-600 dark:text-green-600">BV-BAIA</span>`
+    subTitle="Orgulhamo-nos de apresentar aos nossos clientes, soluções e produtos ópticos, desde armações e lentes monofocais e progressivas, óculos de sol, até lentes de contacto e demais produtos de manutenção."
+    primaryBtn="Nossos Produtos"
+    primaryBtnURL="/products"
+    secondaryBtn="Saber Mais"
+    secondaryBtnURL="/contact"
+    withReview={true}
+    avatars={avatarSrcs}
+    rating=`<span class="font-bold">4.8</span> / 5`
+    starCount={4}
+    reviews=`Mais de <span class="font-bold">1k</span> Clientes satisfeitos`
+    src={heroImage}
+    alt="bv-baia oculod"
+  />
+
+  <ClientsSection
+    title="Nossas Marcas"
+    subTitle="Nossos produtos são formecidos por marcas líderes do mercado para proporcionar a melhor experiência para os nossos clientes."
+  />
+
+  <FeaturesGeneral />
+
+  <FeaturesNavs />
+
+  <TestimonialsSection
+    title="Depoimentos"
+    subTitle="Nossos clientes adoram a Óptica BV-BAIA! Aqui estão alguns depoimentos:"
+    ;
+    testimonials={[
+      {
+        content:
+          "Os óculos que comprei aqui são incríveis! A equipe foi super atenciosa.!",
+        author: "Joh Doe",
+        role: "Cliente | Uíge.",
+        avatarSrc: "/image/user3.jpg",
+      },
+      {
+        content: "Minha consulta foi rápida e eficiente. Recomendo a todos!",
+        author: "Lary Phink",
+        role: "Cliente | Uíge.",
+        avatarSrc: "/image/user3.jpg",
+      },
+      {
+        content:
+          "As lentes fotossensíveis que adquiri são perfeitas para o meu dia a dia.",
+        author: "Gomes Paca",
+        role: "Cliente | Uíge.",
+        avatarSrc: "/image/user3.jpg",
+      },
+    ]}
+    statistics={[
+      {
+        count: "+1k",
+        description: "clientes safisteitos com os nossos serviços e produtos",
+      },
+      {
+        count: "+3k",
+        description: "seguidores nas redes sociais",
+      },
+      {
+        count: "10%",
+        description: "desconto no seu primeiro produto ou consulta",
+      },
+      {
+        count: "2x",
+        description: "entragas rápidas e atendimento",
+      },
+    ]}
+  />
+
+  <FAQ />
+
+  <HeroSectionAlt
+    title="AJUDAMOS-TE A VER MELHOR"
+    subTitle="Você vê melhor e nós ficamos feliz"
+    url="/products"
+  />
+</MainLayout>

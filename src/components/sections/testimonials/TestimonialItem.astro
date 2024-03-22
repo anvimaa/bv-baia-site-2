@@ -1,0 +1,38 @@
+---
+import { Image } from "astro:assets";
+
+const { content, author, role, avatarSrc } = Astro.props;
+
+interface Props {
+  content: string;
+  author: string;
+  role: string;
+  avatarSrc: string;
+}
+---
+
+<blockquote class="relative pt-4">
+  <div class="relative z-10">
+    <p class="text-xl italic text-neutral-800 dark:text-neutral-200">
+      {content}
+    </p>
+  </div>
+
+  <div class="">
+    <div class="flex items-center">
+      <div class="flex-shrink-0">
+        <img
+          class="h-8 w-8 rounded-full"
+          src={avatarSrc}
+          alt="Avatar Description"
+        />
+      </div>
+      <div class="ms-4 grow">
+        <div class="font-bold text-neutral-800 dark:text-neutral-200">
+          {author}
+        </div>
+        <div class="text-xs text-neutral-500">{role}</div>
+      </div>
+    </div>
+  </div>
+</blockquote>
