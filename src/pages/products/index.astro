@@ -6,6 +6,9 @@ import CardSmall from "../../components/ui/cards/CardSmall.astro";
 import CardWide from "../../components/ui/cards/CardWide.astro";
 import FeaturesStatsAlt from "../../components/sections/features/FeaturesStatsAlt.astro";
 import TestimonialsSectionAlt from "../../components/sections/testimonials/TestimonialsSectionAlt.astro";
+import avatar1 from "../../images/avatar.png";
+import avatar2 from "../../images/avatar2.png";
+import avatar3 from "../../images/avatar3.png";
 
 // Importing necessary functions from Astro
 import { getCollection } from "astro:content";
@@ -31,7 +34,7 @@ const testimonials = [
     content: `"Depois de anos lutando com problemas de visão e tentando encontrar os óculos certos, finalmente encontrei a Óptica BV-Baía. Desde o primeiro exame até a escolha dos óculos, fiquei impressionada com a atenção e o cuidado da equipe. Agora, com meus novos óculos, vejo o mundo de uma maneira totalmente nova. Recomendo a Óptica BV-Baía a todos que valorizam qualidade e serviço excepcionais."`,
     author: "Jason Clark",
     role: "Site Foreman | TopBuild",
-    avatarSrc: "/image/avatar.png",
+    avatarSrc: avatar1,
     avatarAlt: "Image Description",
   },
   // Second testimonial data
@@ -39,7 +42,7 @@ const testimonials = [
     content: `"Como alguém que depende de lentes de contato para corrigir minha visão, sempre fui cético em relação a experimentar novas marcas. No entanto, depois de visitar a Óptica BV-Baía e receber uma consulta personalizada, decidi experimentar suas lentes recomendadas. Fiquei surpreso com o conforto e a nitidez que experimentei desde o primeiro momento. Agora, não consigo imaginar minha vida sem elas. Obrigado, Óptica BV-Baía, por me proporcionar uma visão tão clara e confortável."`,
     author: "Maria Gonzalez",
     role: "Interior Designer | Creative Spaces",
-    avatarSrc: "/image/avatar2.png",
+    avatarSrc: avatar2,
     avatarAlt: "Image Description",
   },
   // Third testimonial data
@@ -47,7 +50,7 @@ const testimonials = [
     content: `"Como alguém com uma prescrição complexa, sempre tive dificuldade em encontrar óculos que se ajustassem corretamente e proporcionassem uma visão nítida. Mas minha experiência na Óptica BV-Baía foi excepcional. A equipe não apenas me ajudou a escolher a armação perfeita, mas também garantiram que minhas lentes fossem precisamente adaptadas às minhas necessidades. Agora, finalmente posso ver com clareza e estilo. Estou extremamente grata por sua expertise e cuidado."`,
     author: "Richard Kim",
     role: "Master Carpenter | WoodWright",
-    avatarSrc: "/image/avatar3.png",
+    avatarSrc: avatar3,
     avatarAlt: "Image Description",
   },
 ];

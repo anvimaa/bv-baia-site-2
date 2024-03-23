@@ -10,13 +10,12 @@ import TestimonialsSection from "../components/sections/testimonials/Testimonial
 import FAQ from "../components/sections/FAQ.astro";
 import AnnouncementBanner from "../components/ui/banners/AnnouncementBanner.astro";
 import heroImage from "../images/hero1.jpg";
+import avatar1 from "../images/avatar.png";
+import avatar2 from "../images/avatar2.png";
+import avatar3 from "../images/avatar3.png";
+import avatar4 from "../images/avatar4.png";
 
-const avatarSrcs: Array<string> = [
-  "/image/user1.jpg",
-  "/image/user2.jpg",
-  "/image/user3.jpg",
-  "/image/user4.jpg",
-];
+const avatarSrcs: Array<ImageMetadata> = [avatar1, avatar2, avatar3, avatar4];
 ---
 
 <MainLayout>
@@ -62,20 +61,20 @@ const avatarSrcs: Array<string> = [
           "Os óculos que comprei aqui são incríveis! A equipe foi super atenciosa.!",
         author: "Joh Doe",
         role: "Cliente | Uíge.",
-        avatarSrc: "/image/user3.jpg",
+        avatarSrc: avatar1,
       },
       {
         content: "Minha consulta foi rápida e eficiente. Recomendo a todos!",
         author: "Lary Phink",
         role: "Cliente | Uíge.",
-        avatarSrc: "/image/user3.jpg",
+        avatarSrc: avatar2,
       },
       {
         content:
           "As lentes fotossensíveis que adquiri são perfeitas para o meu dia a dia.",
         author: "Gomes Paca",
         role: "Cliente | Uíge.",
-        avatarSrc: "/image/user3.jpg",
+        avatarSrc: avatar3,
       },
     ]}
     statistics={[

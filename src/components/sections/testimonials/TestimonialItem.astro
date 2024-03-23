@@ -7,7 +7,7 @@ interface Props {
   content: string;
   author: string;
   role: string;
-  avatarSrc: string;
+  avatarSrc: ImageMetadata;
 }
 ---
 
@@ -21,10 +21,12 @@ interface Props {
   <div class="">
     <div class="flex items-center">
       <div class="flex-shrink-0">
-        <img
+        <Image
           class="h-8 w-8 rounded-full"
           src={avatarSrc}
           alt="Avatar Description"
+          width="32"
+          height="32"
         />
       </div>
       <div class="ms-4 grow">

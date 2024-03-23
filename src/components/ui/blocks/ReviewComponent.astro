@@ -6,7 +6,7 @@ import HalfStar from "../../ui/stars/HalfStar.astro";
 const { avatars, starCount = 0, rating, reviews } = Astro.props;
 
 interface Props {
-  avatars?: Array<string>;
+  avatars?: Array<ImageMetadata>;
   starCount?: number;
   rating?: string;
   reviews?: string;
