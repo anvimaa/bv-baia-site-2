@@ -4,36 +4,44 @@
 // 'meta' sets a default description meta tag to describe the page content.
 // 'structuredData' defines default structured data in JSON-LD format to enhance search engine understanding of the page (for SEO purposes).
 const defaultProps = {
-  meta: "ScrewFast offers top-tier hardware tools and expert construction services to meet all your project needs. Start exploring and contact our sales team for superior quality and reliability.",
+  meta: "Optica BV-BAIA, ajudamos-te a ver melhor",
   structuredData: {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "name": "ScrewFast",
-    "url": "https://screwfast.uk",
-    "description": "ScrewFast offers top-tier hardware tools and expert construction services to meet all your project needs. Start exploring and contact our sales team for superior quality and reliability.",
+    name: "Óptica BV-BAIA",
+    url: "https://bv-baia-site-2.vercel.app",
+    description:
+      "Orgulhamo-nos de apresentar aos nossos clientes, soluções e produtos ópticos, desde armações e lentes monofocais e progressivas, óculos de sol, até lentes de contacto e demais produtos de manutenção.",
   },
 };
 
 // Extract props with default values assigned from defaultProps. Values can be overridden when the component is used.
 // For example:
 // <MainLayout title="Custom Title" meta="Custom description." />
-const { meta = defaultProps.meta, structuredData = defaultProps.structuredData } = Astro.props;
+const {
+  meta = defaultProps.meta,
+  structuredData = defaultProps.structuredData,
+} = Astro.props;
 
 // Define the metadata for your website and individual pages
-const title: string = "ScrewFast"; // Set default title
-const ogTitle: string = "ScrewFast: Hardware Tools & Construction Services"; // Set the Open Graph title
-const author: string = "Emil Gulamov"; // Set the author's name
+const title: string = "Óptica BV-BAIA"; // Set default title
+const ogTitle: string = "Óptica BV-BAIA: Ajudamos-te a ver melhor"; // Set the Open Graph title
+const author: string = "Antonio Mantente"; // Set the author's name
 const ogDescription: string =
-  "Equip your projects with ScrewFast's top-quality hardware tools and expert construction services. Trusted by industry leaders, ScrewFast offers simplicity, affordability, and reliability. Experience the difference with user-centric design and cutting-edge tools. Start exploring now!"; // Set the Open Graph description
+  "Orgulhamo-nos de apresentar aos nossos clientes, soluções e produtos ópticos, desde armações e lentes monofocais e progressivas, óculos de sol, até lentes de contacto e demais produtos de manutenção."; // Set the Open Graph description
 const URL: string = `${Astro.site}`; // Set the website URL in astro.config.mjs
 const socialImage: string = `${Astro.site}/social.png`; // Set the path for the social media image
 ---
 
 <!-- Inject structured data into the page if provided. This data is formatted as JSON-LD, a method recommended by Google for structured data pass:
-     https://developers.google.com/search/docs/advanced/structured-data/intro-structured-data -->
-{structuredData && (
-  <script type="application/ld+json" set:html={JSON.stringify(structuredData)}></script>
-)}
+     https://developers.google.com/search/docs/advanced/structured-data/intro-structured-data -->{
+  structuredData && (
+    <script
+      type="application/ld+json"
+      set:html={JSON.stringify(structuredData)}
+    />
+  )
+}
 <!-- Define the character set, description, author, and viewport settings -->
 <meta charset="utf-8" />
 <meta content={meta} name="description" />
@@ -45,7 +53,7 @@ const socialImage: string = `${Astro.site}/social.png`; // Set the path for the 
 <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
 <!-- Facebook Meta Tags -->
-<meta property="og:locale" content="en_US" />
+<meta property="og:locale" content="pt_BR" />
 <meta property="og:url" content={URL} />
 <meta property="og:type" content="website" />
 <meta property="og:title" content={ogTitle} />
