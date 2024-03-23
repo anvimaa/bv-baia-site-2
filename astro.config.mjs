@@ -8,7 +8,7 @@ import starlight from "@astrojs/starlight";
 // https://astro.build/config
 export default defineConfig({
   // https://docs.astro.build/en/guides/images/#authorizing-remote-images
-  site: "https://bv-baia-site-2.vercel.app",
+  site: "https://bvbaiapreview.vercel.app/",
   image: {
     domains: ["images.unsplash.com"],
   },
