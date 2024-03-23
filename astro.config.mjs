@@ -63,7 +63,7 @@ export default defineConfig({
       brotli: true,
     }),
   ],
-  output: "static",
+  output: "server",
   experimental: {
     clientPrerender: true,
     directRenderScript: true,
