@@ -9,7 +9,7 @@ export const navBarLinks = [
 // An array of links for footer
 export const footerLinks = [
   {
-    section: "Óptiva BV-BAIA",
+    section: "BV-BAIA",
     links: [
       { name: "Produtos", url: "/products" },
       { name: "Serviços", url: "/services" },
