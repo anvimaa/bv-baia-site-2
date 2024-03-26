@@ -10,19 +10,15 @@ interface Props {
 // Define CSS classes for the hyperlink button
 const baseClasses =
   "inline-flex items-center justify-center gap-x-2 rounded-lg px-4 py-3 text-center text-sm font-medium text-white shadow-sm outline-none ring-zinc-500 focus-visible:ring transition duration-300";
-const borderClasses = "border border-neutral-200";
-const bgColorClasses = "bg-blue-600 hover:bg-blue-700";
+const bgColorClasses = "bg-secondary-normal hover:bg-secondary-accent";
 const disableClasses = "disabled:pointer-events-none disabled:opacity-50";
 const fontSizeClasses = "2xl:text-base";
 const ringClasses = "ring-zinc-500";
-
-const darkClasses =
-  "dark:border-neutral-700 dark:bg-zinc-700 dark:text-neutral-300 dark:ring-zinc-200 dark:hover:bg-zinc-600 dark:focus:outline-none";
 ---
 
 <!-- Styled hyperlink -->
 <a
-  class={`${baseClasses} ${borderClasses} ${bgColorClasses}  ${disableClasses} ${fontSizeClasses} ${ringClasses} ${darkClasses}`}
+  class={`${baseClasses} ${bgColorClasses}  ${disableClasses} ${fontSizeClasses} ${ringClasses}`}
   href={url}
 >
   {title}

@@ -7,7 +7,12 @@ export default {
   ],
   darkMode: "class",
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: { normal: "#43a047", accent: "#388e3c" },
+        secondary: { normal: "#1e88e5", accent: "#0288d1" },
+      },
+    },
   },
   plugins: [
     require("tailwindcss/nesting"),
