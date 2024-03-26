@@ -40,6 +40,6 @@ Este projeto está licenciado sob a [Licença MIT](https://opensource.org/licens
 
 ## Contato
 
-Se você tiver alguma dúvida ou sugestão relacionada a este projeto, sinta-se à vontade para entrar em contato conosco através do email [anvimaa@gmail.com](mailto: anvimaa@gmail.com)
+Se você tiver alguma dúvida ou sugestão relacionada a este projeto, sinta-se à vontade para entrar em contato conosco através do email [anvimaa@gmail.com](mailto:anvimaa@gmail.com)
 
 Obrigado por visitar nosso repositório.
