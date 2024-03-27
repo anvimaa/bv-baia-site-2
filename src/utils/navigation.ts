@@ -29,7 +29,6 @@ export const footerLinks = [
 export const socialLinks = {
   facebook: "#",
   x: "#",
-  github: "https://github.com/anvimaa",
   google: "#",
   slack: "#",
 };
