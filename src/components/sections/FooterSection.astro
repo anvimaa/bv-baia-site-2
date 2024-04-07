@@ -3,6 +3,7 @@
 import FooterSocialLink from "../ui/links/FooterSocialLink.astro";
 import EmailFooterInput from "../ui/forms/input/EmailFooterInput.astro";
 import { footerLinks, socialLinks } from "../../utils/navigation.ts";
+import { config } from "../../utils/config";
 
 // Define the variables that will be used in this component
 const sectionThreeTitle: string = "Subscreva ao nosso Newsletter";
@@ -19,7 +20,7 @@ const sectionThreeContent: string =
         <!-- Brand Logo -->
         <h1 class="text-2xl">
           <span class="text-secondary-normal">ÓPTICA</span>
-          <span class="text-primary-normal">BV-BAIA</span>
+          <span class="text-primary-normal">{config.brand}</span>
         </h1>
       </div>
       <!-- An array of links for Product and Company sections -->
@@ -69,7 +70,8 @@ const sectionThreeContent: string =
     >
       <div class="flex items-center justify-between">
         <p class="text-sm text-neutral-600 dark:text-neutral-400">
-          © <span id="current-year"></span> BV-BAIA. Criado com ❤️ por
+          © <span id="current-year"></span>
+          {config.brand}. Criado com ❤️ por
           <a
             class="rounded-lg font-medium underline underline-offset-2 outline-none ring-zinc-500 transition duration-300 hover:text-neutral-700 hover:decoration-dashed focus:outline-none focus-visible:ring dark:ring-zinc-200 dark:hover:text-neutral-300"
             href="https://anvima.vercel.app"

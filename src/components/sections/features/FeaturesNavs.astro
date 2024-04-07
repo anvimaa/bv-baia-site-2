@@ -6,6 +6,7 @@ import TabContent from "../../ui/blocks/TabContent.astro";
 import mission1 from "../../../images/mission/mission1.avif";
 import mission2 from "../../../images/mission/mission2.avif";
 import mission3 from "../../../images/mission/mission3.avif";
+import { config } from "../../../utils/config";
 
 // Define the variable for the section's heading
 const title: string = `Missão e Valores`;
@@ -27,8 +28,8 @@ const title: string = `Missão e Valores`;
           <Fragment set:html={title} />
         </h2>
         <p class="pt-2 text-neutral-800 dark:text-neutral-200">
-          Na Óptica BV-BAIA, nossa missão é proporcionar uma visão clara e
-          saudável para todos os nossos clientes. Nossos valores incluem:
+          Na Óptica {config.brand}, nossa missão é proporcionar uma visão clara
+          e saudável para todos os nossos clientes. Nossos valores incluem:
         </p>
         <!-- Tab navigation - use the attribute 'first' in the first TabNav for the component to work -->
         <nav class="mt-5 grid gap-4 md:mt-10" aria-label="Tabs" role="tablist">
@@ -77,7 +78,7 @@ const title: string = `Missão e Valores`;
             content="Construímos relacionamentos de confiança com nossos clientes, garantindo que eles se sintam bem cuidados."
           >
             <svg
-              class="hs-tab-active:text-secondary-normal dark:hs-tab-active:text-secondary-normal h-6 w-6 flex-shrink-0 text-neutral-700 dark:text-neutral-300 md:h-7 md:w-7"
+              class="h-6 w-6 flex-shrink-0 text-neutral-700 hs-tab-active:text-secondary-normal dark:text-neutral-300 dark:hs-tab-active:text-secondary-normal md:h-7 md:w-7"
               fill="none"
               viewBox="0 0 24 24"
               stroke-width="1.5"

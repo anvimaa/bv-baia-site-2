@@ -6,6 +6,7 @@ import TextInput from "../ui/forms/input/TextInput.astro";
 import EmailContactInput from "../ui/forms/input/EmailContactInput.astro";
 import PhoneInput from "../ui/forms/input/PhoneInput.astro";
 import TextAreaInput from "../ui/forms/input/TextAreaInput.astro";
+import { config } from "../../utils/config";
 
 // Define the variables that will be used in this component
 const title: string = "Entre em contacto";
@@ -102,10 +103,10 @@ const formSubTitle: string = "Respondemos em 1-2 dias úteis";
         </ContactIconBlock>
 
         <ContactIconBlock
-          heading="Visite-nos"
-          content="Angola, Uíge"
           isAddressVisible={true}
-          addressContent="Bairro Dunga, Rua C de fronte antida Coca Cola"
+          heading="Nosso Endereço"
+          content={config.adress.city}
+          addressContent={config.adress.adress}
           ><svg
             class="mt-1.5 h-6 w-6 flex-shrink-0 text-neutral-600 dark:text-neutral-400"
             fill="none"
@@ -128,9 +129,8 @@ const formSubTitle: string = "Respondemos em 1-2 dias úteis";
         <ContactIconBlock
           heading="Contacte-nos por telefone"
           content="Se preferes falar com a nossa linha de apoi deire-ta, podes nos contactar pelos seguintes terminal"
-          isLinkVisible={true}
-          linkTitle="+244 --- --- ---"
-          linkURL="#"
+          addressContent={config.telefone}
+          isAddressVisible={true}
           ><svg
             class="mt-1.5 h-6 w-6 flex-shrink-0 text-neutral-600 dark:text-neutral-400"
             fill="none"

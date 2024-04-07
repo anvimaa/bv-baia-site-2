@@ -4,6 +4,7 @@ import ThemeIcon from "../ThemeIcon.astro";
 import NavLink from "../ui/links/NavLink.astro";
 import Authentication from "./Authentication.astro";
 import { navBarLinks } from "../../utils/navigation.ts";
+import { config } from "../../utils/config";
 ---
 
 <!-- Main header component -->
@@ -24,7 +25,7 @@ import { navBarLinks } from "../../utils/navigation.ts";
       >
         <h1 class="text-2xl">
           <span class="text-secondary-normal">ÓPTICA</span>
-          <span class="text-primary-normal">BV-BAIA</span>
+          <span class="text-primary-normal">{config.brand}</span>
         </h1>
       </a>
       <!-- Collapse toggle for smaller screens -->

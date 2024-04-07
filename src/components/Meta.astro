@@ -1,15 +1,16 @@
 ---
+import { config } from "../utils/config";
 // Default properties for the Meta component. These values are used if props are not provided.
 // 'title' sets the default page title for the website.
 // 'meta' sets a default description meta tag to describe the page content.
 // 'structuredData' defines default structured data in JSON-LD format to enhance search engine understanding of the page (for SEO purposes).
 const defaultProps = {
-  meta: "Optica BV-BAIA, ajudamos-te a ver melhor",
+  meta: `Optica ${config.brand}, ajudamos-te a ver melhor`,
   structuredData: {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    name: "Óptica BV-BAIA",
-    url: "https://bvbaiapreview.vercel.app/",
+    name: `Óptica ${config.brand}`,
+    url: config.site,
     description:
       "Orgulhamo-nos de apresentar aos nossos clientes, soluções e produtos ópticos, desde armações e lentes monofocais e progressivas, óculos de sol, até lentes de contacto e demais produtos de manutenção.",
   },
@@ -24,8 +25,8 @@ const {
 } = Astro.props;
 
 // Define the metadata for your website and individual pages
-const title: string = "Óptica BV-BAIA"; // Set default title
-const ogTitle: string = "Óptica BV-BAIA: Ajudamos-te a ver melhor"; // Set the Open Graph title
+const title: string = `Óptica ${config.brand}`; // Set default title
+const ogTitle: string = `Óptica ${config.brand}: Ajudamos-te a ver melhor`; // Set the Open Graph title
 const author: string = "Antonio Mantente"; // Set the author's name
 const ogDescription: string =
   "Orgulhamo-nos de apresentar aos nossos clientes, soluções e produtos ópticos, desde armações e lentes monofocais e progressivas, óculos de sol, até lentes de contacto e demais produtos de manutenção."; // Set the Open Graph description

@@ -14,6 +14,7 @@ import avatar1 from "../images/avatar.png";
 import avatar2 from "../images/avatar2.png";
 import avatar3 from "../images/avatar3.png";
 import avatar4 from "../images/avatar4.png";
+import { config } from "../utils/config";
 
 const avatarSrcs: Array<ImageMetadata> = [avatar1, avatar2, avatar3, avatar4];
 ---
@@ -27,7 +28,7 @@ const avatarSrcs: Array<ImageMetadata> = [avatar1, avatar2, avatar3, avatar4];
 
   <HeroSection
     title=`Cuide os seus olhos com a <span class="text-secondary-normal">ÓPTICA</span> <span
-        class="text-primary-normal">BV-BAIA</span>`
+        class="text-primary-normal">${config.brand}</span>`
     subTitle="Orgulhamo-nos de apresentar aos nossos clientes, soluções e produtos ópticos, desde armações e lentes monofocais e progressivas, óculos de sol, até lentes de contacto e demais produtos de manutenção."
     primaryBtn="Nossos Produtos"
     primaryBtnURL="/products"
@@ -53,7 +54,7 @@ const avatarSrcs: Array<ImageMetadata> = [avatar1, avatar2, avatar3, avatar4];
 
   <TestimonialsSection
     title="Depoimentos"
-    subTitle="Nossos clientes adoram a Óptica BV-BAIA! Aqui estão alguns depoimentos:"
+    subTitle=`Nossos clientes adoram a Óptica ${config.brand}! Aqui estão alguns depoimentos:`
     ;
     testimonials={[
       {
