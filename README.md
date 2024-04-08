@@ -1,4 +1,4 @@
-# Projeto Site e Blog Empresa/Clínica Óptica
+# Projeto de um Site e Blog para Empresas
 
 Bem-vindo ao repositório do projeto para um site e blog de uma Óptica. Este projeto foi desenvolvido para fornecer uma plataforma online para a empresa Óptica, especializada em serviços ópticos e venda de produtos relacionados.
 
