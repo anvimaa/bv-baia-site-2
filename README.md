@@ -1,10 +1,10 @@
 # Projeto de um Site e Blog para Empresas
 
-Bem-vindo ao repositório do projeto para um site e blog de uma Óptica. Este projeto foi desenvolvido para fornecer uma plataforma online para a empresa Óptica, especializada em serviços ópticos e venda de produtos relacionados.
+Bem-vindo ao repositório do projeto para um site e blog de uma RESORT. Este projeto foi desenvolvido para fornecer uma plataforma online para a empresa RESORT, especializada em serviços ópticos e venda de produtos relacionados.
 
 ## Visão Geral
 
-O objetivo principal deste projeto é criar uma presença online para a Óptica, permitindo que os clientes conheçam os serviços oferecidos, os produtos disponíveis para venda e tenham acesso a conteúdo relevante relacionado à saúde ocular e moda em óculos.
+O objetivo principal deste projeto é criar uma presença online para a RESORT, permitindo que os clientes conheçam os serviços oferecidos, os produtos disponíveis para venda e tenham acesso a conteúdo relevante relacionado à saúde ocular e moda em óculos.
 
 ## Funcionalidades
 
@@ -17,7 +17,7 @@ O objetivo principal deste projeto é criar uma presença online para a Óptica,
 ## Tecnologias Utilizadas
 
 - HTML5 e TailwindCSS para a estrutura e estilo do site.
-- Framework Astro.JS 
+- Framework Astro.JS
 
 ## Como Contribuir
 

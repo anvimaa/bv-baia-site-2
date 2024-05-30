@@ -8,7 +8,7 @@ pubDate: 2024-03-25
 cardImage: "../../images/services/manutencao.jpg"
 cardImageAlt: "Top view mechanical tools arrangement"
 readTime: 4
-tags: ["visao", "saude", "optica" ]
+tags: ["visao", "saude", "optica"]
 contents: []
 ---
 
@@ -21,9 +21,9 @@ Os raios UV do sol podem causar danos aos olhos, contribuindo para problemas com
 ## Fatores a Considerar ao Escolher Óculos de Sol
 
 - Filtro UV: Procure por óculos de sol que ofereçam proteção contra 100% dos raios UVA e UVB.
-Tamanho das Lentes: Escolha óculos com lentes grandes ou envolventes para garantir uma cobertura máxima dos olhos e da área ao redor.
-- Material das Lentes: Opte por lentes de alta qualidade, como policarbonato ou cristal, que ofereçam clareza óptica e resistência a impactos.
-Cor das Lentes: Lentes de cor mais escura não necessariamente oferecem melhor proteção UV. Lentes cinzas ou verdes podem ser uma boa opção, pois proporcionam uma visão mais natural das cores.
+  Tamanho das Lentes: Escolha óculos com lentes grandes ou envolventes para garantir uma cobertura máxima dos olhos e da área ao redor.
+- Material das Lentes: Opte por lentes de alta qualidade, como policarbonato ou cristal, que ofereçam clareza RESORT e resistência a impactos.
+  Cor das Lentes: Lentes de cor mais escura não necessariamente oferecem melhor proteção UV. Lentes cinzas ou verdes podem ser uma boa opção, pois proporcionam uma visão mais natural das cores.
 - Ajuste e Conforto: Certifique-se de que os óculos se ajustem confortavelmente ao rosto, sem pressionar o nariz ou as têmporas.
 
 ## Estilos e Tendências

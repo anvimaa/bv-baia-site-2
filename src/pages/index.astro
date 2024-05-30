@@ -22,16 +22,15 @@ const avatarSrcs: Array<ImageMetadata> = [avatar1, avatar2, avatar3, avatar4];
 <MainLayout>
   <AnnouncementBanner
     btnId="dismiss-button"
-    btnTitle="Anvima Tech"
+    btnTitle="Anvima Code"
     url="https://anvima.vercel.app"
   />
 
   <HeroSection
-    title=`Cuide os seus olhos com a <span class="text-secondary-normal">ÓPTICA</span> <span
-        class="text-primary-normal">${config.brand}</span>`
-    subTitle="Orgulhamo-nos de apresentar aos nossos clientes, soluções e produtos ópticos, desde armações e lentes monofocais e progressivas, óculos de sol, até lentes de contacto e demais produtos de manutenção."
-    primaryBtn="Nossos Produtos"
-    primaryBtnURL="/products"
+    title=`Resort Kifulo Kieto: Onde o Luxo Encontra a Natureza`
+    subTitle="Bem-vindo ao Resort Kifulo Kieto, um paraíso de tranquilidade e luxo no coração da natureza. Oferecemos uma experiência única, combinando acomodações de classe mundial com a beleza intocada da nossa região. Desfrute de um refúgio perfeito, onde cada detalhe é pensado para proporcionar o máximo conforto e satisfação."
+    primaryBtn="Nossos Serviços"
+    primaryBtnURL="/services"
     secondaryBtn="Saber Mais"
     secondaryBtnURL="/contact"
     withReview={true}
@@ -40,7 +39,7 @@ const avatarSrcs: Array<ImageMetadata> = [avatar1, avatar2, avatar3, avatar4];
     starCount={4}
     reviews=`Mais de <span class="font-bold">1k</span> Clientes satisfeitos`
     src={heroImage}
-    alt="bv-baia oculod"
+    alt="resort kifulo kieto"
   />
 
   <ClientsSection
@@ -48,31 +47,32 @@ const avatarSrcs: Array<ImageMetadata> = [avatar1, avatar2, avatar3, avatar4];
     subTitle="Nossos produtos são formecidos por marcas líderes do mercado para proporcionar a melhor experiência para os nossos clientes."
   />
 
-  <FeaturesGeneral />
+  <!-- <FeaturesGeneral /> -->
 
   <FeaturesNavs />
 
   <TestimonialsSection
     title="Depoimentos"
-    subTitle=`Nossos clientes adoram a Óptica ${config.brand}! Aqui estão alguns depoimentos:`
+    subTitle=`Nossos clientes adoram o RESORT ${config.brand}! Aqui estão alguns depoimentos:`
     ;
     testimonials={[
       {
         content:
-          "Os óculos que comprei aqui são incríveis! A equipe foi super atenciosa.!",
+          "Estadia incrível! Atendimento impecável e instalações de primeira.",
         author: "Joh Doe",
         role: "Cliente | Uíge.",
         avatarSrc: avatar1,
       },
       {
-        content: "Minha consulta foi rápida e eficiente. Recomendo a todos!",
+        content:
+          "Comida deliciosa e vistas deslumbrantes. Um verdadeiro paraíso!",
         author: "Lary Phink",
         role: "Cliente | Uíge.",
         avatarSrc: avatar2,
       },
       {
         content:
-          "As lentes fotossensíveis que adquiri são perfeitas para o meu dia a dia.",
+          "Nosso casamento foi perfeito graças à equipe do resort. Inesquecível!",
         author: "Gomes Paca",
         role: "Cliente | Uíge.",
         avatarSrc: avatar3,
@@ -101,8 +101,8 @@ const avatarSrcs: Array<ImageMetadata> = [avatar1, avatar2, avatar3, avatar4];
   <FAQ />
 
   <HeroSectionAlt
-    title="AJUDAMOS-TE A VER MELHOR"
-    subTitle="Você vê melhor e nós ficamos feliz"
+    title="O melhor para o seu conforto"
+    subTitle="Proporcionammos os melhores momentos para você e a sua família. Experimente os nossos produtos e venha descobrir o que é melhor para o seu estilo de vida."
     url="/products"
   />
 </MainLayout>
